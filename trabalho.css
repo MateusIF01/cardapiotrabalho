@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(240, 240, 123);
+}
+
+.menu {
+
+    font-family: "arial";
+    font-size: 16pt;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.menu div {
+
+    list-style: none;
+    display: flex;
+    text-align: center;
+
+}
+
+
+@media(max-width: 520px) {
+
+    .menu div {
+        display: block;
+    }
+}
+
+.conteudo {
+
+    padding: 6px 12px;
+    display: none;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+#div {
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+    border: black solid 1px;
+    color: red;
+}
+
+.menu div button {
+
+    padding: 20px;
+    flex-grow: 1;
+    transition: background-color .2s linear;
+    border: solid 1px transparent;
+    background-color: rgb(197, 67, 67);
+    text-decoration: none;
+    color: #fff;
+    font-family: "arial";
+    font-size: 16pt;
+
+}
+
+.menu div button:hover {
+
+    border: solid 1px #fff;
+    background-color: transparent !important;
+    cursor: pointer;
+
+}
+
+.menu div button.ativo {
+    color: rgb(224, 142, 18);
+    background-color: blueviolet;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(138, 13, 13);
+    font-size: 32pt;
+}
+
+h2 {
+
+    text-align: center;
+    font-size: 26pt;
+
+}
+
+.p{
+    text-align: center;
+    font-size: 20pt;
+}
+
+#final{
+
+    font-size: 16pt;
+    
+}

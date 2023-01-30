@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Cardápio </title>
+
+    <link rel="stylesheet" href="trabalho.css">
+
+</head>
+
+<body>
+
+    <div class="menu">
+
+        <div>
+            <button id="padrao" class="tab-button" onclick="abrirTab(event, 'aba1')"> Início </button>
+            <button class="tab-button" onclick="abrirTab(event, 'aba2')"> Comidas </button>
+            <button class="tab-button" onclick="abrirTab(event, 'aba3')"> Bebidas </button>
+            <button class="tab-button" onclick="abrirTab(event, 'aba4')"> Sobremesas </button>
+            <button class="tab-button" onclick="abrirTab(event, 'aba5')"> Pagamento </button>
+        </div>
+
+    </div>
+
+    <div class="conteudo" id="aba1">
+
+        <h1> Cárdápio Online </h1>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        
+        <h2> Seja bem-vindo ao nosso Cardápio! </h2>
+        <br/>
+        <br/>
+        <br/>
+        <p class="p">
+
+         Realize aqui seus pedidos de forma rápida e eficiente. <br/>
+         Encontre aqui diversos tipos de comidas e sobremesas! <br/>
+         Esse site é um Cardápio Online, onde você pode pedir lanches, bebidas e sobremesas. <br/>
+         Aproveite nosso menu, e compre a vontade. <br/>
+         Tenha uma boa compra!
+            
+        
+        
+        
+        
+        </p>
+
+    </div>
+
+    <div class="conteudo" id="aba2">
+
+        <h1 id="titulo1"> Escolha seu lanche! </h1>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="container">
+
+            <img src="hamburguer1.jpg" alt="hamburguer">
+            <p>
+                Hambúrguer com cebola, tomate, alface, bacon, pão com gergelim e bife. <br />
+                Valor: R$19,99 <br />
+                Escolha a quantidade:<input type="number" id="ham" value="0"> </p>
+
+        </div>
+
+        <br />
+        <br />
+
+        <div class="container">
+
+            <img src="pizza1.jpg" alt="Pizza Calabresa, Italiana, Lombo, Mussarela">
+            <p>
+                Pizza Calabresa, Italiana, Lombo e Mussarela<br />
+                Valor: R$15,99 <br />
+                Escolha a quantidade:<input type="number" id="pizza" value="0"> </p>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="container">
+
+            <img src="tortafrango.jpg" alt="torta de frango">
+            <p>
+                Torta de frango <br />
+                Valor: R$09,50 <br />
+                Escolha a quantidade:<input type="number" id="torta" value="0"> </p>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="container">
+
+            <img src="coxinha.jpg" alt="coxinha">
+            <p>
+                Coxinha <br />
+                Valor: R$04,00 <br />
+                Escolha a quantidade:<input type="number" id="coxinha" value="0"> </p>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="container">
+
+            <img src="paodequeijo.jpg" alt="pao de queijo">
+            <p>
+                Pão de queijo <br />
+                Valor: R$01,50 <br />
+                Escolha a quantidade:<input type="number" id="pao" value="0"> </p>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="container">
+
+            <img src="batata.jpg" alt="batata frita">
+            <p>
+                Batata Frita <br />
+                Valor: R$12,99 <br />
+                Escolha a quantidade:<input type="number" id="batata" value="0"> </p>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="container">
+
+            <img src="esfirra.jpg" alt="esfirra">
+            <p>
+                Esfirra <br />
+                Valor: R$04,50 <br />
+                Escolha a quantidade:<input type="number" id="esfirra" value="0"> </p>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="container">
+
+            <img src="cachorroquente.jpg" alt="cachorro quente">
+            <p>
+                Cachorro-Quente<br />
+                Valor: R$08,00 <br />
+                Escolha a quantidade:<input type="number" id="cachorro" value="0"> </p>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="container">
+
+            <img src="quibe.jpg" alt="quibe">
+            <p>
+                Quibe <br />
+                Valor: R$04,00 <br />
+                Escolha a quantidade:<input type="number" id="quibe" value="0"> </p>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="container">
+
+            <img src="pastel.jpg" alt="pastel">
+            <p>
+                Pastel <br />
+                Valor: R$07,00 <br />
+                Escolha a quantidade:<input type="number" id="pastel" value="0"> </p>
+        </div>
+
+
+    </div>
+
+    <div class="conteudo" id="aba3">
+
+        <h1> Escolha sua bebida! </h1>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div>
+
+            <div class="container">
+
+                <img src="coca.jpg" alt="coca-cola">
+                <p>
+                    Coca-Cola <br />
+                    Valor: R$02,99 <br />
+                    Escolha a quantidade:<input type="number" id="coca" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="pepsi.jpg" alt="pepsi">
+                <p>
+                    Pepsi <br />
+                    Valor: R$02,99<br />
+                    Escolha a quantidade:<input type="number" id="pepsi" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="fanta1.jpg" alt="fanta laranja">
+                <p>
+                    Fanta Laranja <br />
+                    Valor: R$02,99 <br />
+                    Escolha a quantidade:<input type="number" id="laranja" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="fantauva.jpg" alt="fanta uva">
+                <p>
+                    Fanta Uva <br />
+                    Valor: R$02,99 <br />
+                    Escolha a quantidade:<input type="number" id="uva" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="sprite1.jpg" alt="sprite">
+                <p>
+                    Sprite <br />
+                    Valor: R$02,99 <br />
+                    Escolha a quantidade:<input type="number" id="sprite" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="agua.jpg" alt="agua">
+                <p>
+                    Água com gás <br />
+                    Valor: R$02,00 <br />
+                    Escolha a quantidade:<input type="number" id="agua" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="sucoabacaxi.jpg" alt="suco de abacaxi">
+                <p>
+                    Suco de abacaxi <br />
+                    Valor: R$01,50 <br />
+                    Escolha a quantidade:<input type="number" id="abacaxi" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="sucolaranja.jpg" alt="suco de laranja">
+                <p>
+                    Suco de laranja <br />
+                    Valor: R$01,50 <br />
+                    Escolha a quantidade:<input type="number" id="laranja" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="limonada.jpg" alt="limonada">
+                <p>
+                    Limonada <br />
+                    Valor: R$01,50 <br />
+                    Escolha a quantidade:<input type="number" id="limonada" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="milk.jpg" alt="milkshake">
+                <p>
+                    Milkshake<br />
+                    Valor: R$01,50 <br />
+                    Escolha a quantidade:<input type="number" id="milk" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+        </div>
+
+    </div>
+
+    <div class="conteudo" id="aba4">
+
+        <h1> Escolha sua sobremesa! </h1>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div>
+
+            <div class="container">
+
+                <img src="pudim.jpg" alt="pudim">
+                <p>
+                    Pudim <br />
+                    Valor: R$29,50 <br />
+                    Escolha a quantidade:<input type="number" id="pudim" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="bolochocolate.jpg" alt="bolo de chocolate">
+                <p>
+                    Bolo de chocolate <br />
+                    Valor: R$17,50 <br />
+                    Escolha a quantidade:<input type="number" id="bolo" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="brigadeiro.jpg" alt="brigadeiro">
+                <p>
+                    Brigadeiro <br />
+                    Valor: R$01,99 <br />
+                    Escolha a quantidade:<input type="number" id="brigadeiro" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+
+            <div class="container">
+
+                <img src="sundae.jpg" alt="sundae">
+                <p>
+                    Sundae <br />
+                    Valor: R$08,00 <br />
+                    Escolha a quantidade:<input type="number" id="sundae" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="pave.jpg" alt="pavê">
+                <p>
+                    Pavê <br />
+                    Valor: R$34,99 <br />
+                    Escolha a quantidade:<input type="number" id="pave" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="rabanada.jpg" alt="rabanada">
+                <p>
+                    Rabanada <br />
+                    Valor: R$06,00 <br />
+                    Escolha a quantidade:<input type="number" id="rabanada" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="quindim.jpg" alt="quindim">
+                <p>
+                    Quindim <br />
+                    Valor: R$01,60 <br />
+                    Escolha a quantidade:<input type="number" id="quindim" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="donuts.jpg" alt="donuts">
+                <p>
+                    Donuts <br />
+                    Valor: R$04,00 <br />
+                    Escolha a quantidade:<input type="number" id="donuts" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="cupcake.jpg" alt="cupcake">
+                <p>
+                    Cupcake <br />
+                    Valor: R$06,50 <br />
+                    Escolha a quantidade:<input type="number" id="cupcake" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="container">
+
+                <img src="macarons.jpg" alt="macarons">
+                <p>
+                    Macarons <br />
+                    Valor: R$04,00 <br>
+                    Escolha a quantidade:<input type="number" id="macarons" value="0"> </p>
+            </div>
+
+            <br />
+            <br />
+
+        </div>
+    </div>
+
+    <div class="conteudo" id="aba5">
+
+        <h1> Realize o seu pagamento e receba seu pedido! </h1>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <h2> A forma de pagamento será realizada no momento da entrega para evitar complicações, podendo ser realizada por, PIX, crédito, débito ou dinheiro</h2>
+
+        <br/>
+        <br/>
+
+        <div id="final">
+        <form method='POST' action='recebe-dados.php'>
+
+            Nome: <input type="text" id="nome" autocomplete="off"> <br />
+            CEP: <input type="text" id="cep" autocomplete="off" maxlength="9">
+
+        </form>
+    </div>
+        <button onclick="calculo()"> Confirmar </button>
+        <div id="div"> </div>
+    </div>
+
+    <script>
+
+        document.getElementById('padrao').click()
+
+        function abrirTab(event, idTab) {
+            var conteudos = document.getElementsByClassName('conteudo')
+            for (var i = 0; i < conteudos.length; i++) {
+                conteudos[i].style.display = 'none';
+            }
+
+            var tabs = document.getElementsByClassName('tab-button');
+            for (i = 0; i < tabs.length; i++) {
+                tabs[i].className = tabs[i].className.replace('ativo', '');
+            }
+
+            document.getElementById(idTab).style.display = 'block';
+            event.currentTarget.className += " ativo "
+        }
+
+        function calculo() {
+
+            nome = document.getElementById("nome").value
+            i1 = parseInt(document.getElementById('ham').value)
+            i2 = parseInt(document.getElementById('pizza').value)
+            i3 = parseInt(document.getElementById('torta').value)
+            i4 = parseInt(document.getElementById('coxinha').value)
+            i5 = parseInt(document.getElementById('pao').value)
+            i6 = parseInt(document.getElementById('batata').value)
+            i7 = parseInt(document.getElementById('esfirra').value)
+            i8 = parseInt(document.getElementById('cachorro').value)
+            i9 = parseInt(document.getElementById('quibe').value)
+            i10 = parseInt(document.getElementById('pastel').value)
+            i11 = parseInt(document.getElementById('coca').value)
+            i12 = parseInt(document.getElementById('pepsi').value)
+            i13 = parseInt(document.getElementById('laranja').value)
+            i14 = parseInt(document.getElementById('uva').value)
+            i15 = parseInt(document.getElementById('sprite').value)
+            i16 = parseInt(document.getElementById('agua').value)
+            i17 = parseInt(document.getElementById('abacaxi').value)
+            i18 = parseInt(document.getElementById('laranja').value)
+            i19 = parseInt(document.getElementById('limonada').value)
+            i20 = parseInt(document.getElementById('milk').value)
+            i21 = parseInt(document.getElementById('pudim').value)
+            i22 = parseInt(document.getElementById('bolo').value)
+            i23 = parseInt(document.getElementById('brigadeiro').value)
+            i24 = parseInt(document.getElementById('sundae').value)
+            i25 = parseInt(document.getElementById('pave').value)
+            i26 = parseInt(document.getElementById('rabanada').value)
+            i27 = parseInt(document.getElementById('quindim').value)
+            i28 = parseInt(document.getElementById('donuts').value)
+            i29 = parseInt(document.getElementById('cupcake').value)
+            i30 = parseInt(document.getElementById('macarons').value)
+
+
+            v1 = 19.99
+            v2 = 15.99
+            v3 = 9.50
+            v4 = 4.00
+            v5 = 1.50
+            v6 = 12.99
+            v7 = 4.50
+            v8 = 8.00
+            v9 = 4.00
+            v10 = 7.00
+            v11 = 2.99
+            v12 = 2.99
+            v13 = 2.99
+            v14 = 2.99
+            v15 = 2.99
+            v16 = 2.00
+            v17 = 1.50
+            v18 = 1.50
+            v19 = 1.50
+            v20 = 1.50
+            v21 = 29.50
+            v22 = 17.50
+            v23 = 1.99
+            v24 = 8.00
+            v25 = 34.99
+            v26 = 6.00
+            v27 = 1.60
+            v28 = 4.00
+            v29 = 6.50
+            v30 = 4.00
+
+            res1 = i1 * v1
+            res2 = i2 * v2
+            res3 = i3 * v3
+            res4 = i4 * v4
+            res5 = i5 * v5
+            res6 = i6 * v6
+            res7 = i7 * v7
+            res8 = i8 * v8
+            res9 = i9 * v9
+            res10 = i10 * v10
+            res11 = i11 * v11
+            res12 = i12 * v12
+            res13 = i13 * v13
+            res14 = i14 * v14
+            res15 = i15 * v15
+            res16 = i16 * v16
+            res17 = i17 * v17
+            res18 = i18 * v18
+            res19 = i19 * v19
+            res20 = i20 * v20
+            res21 = i21 * v21
+            res22 = i22 * v22
+            res23 = i23 * v23
+            res24 = i24 * v24
+            res25 = i25 * v25
+            res26 = i26 * v26
+            res27 = i27 * v27
+            res28 = i28 * v28
+            res29 = i29 * v29
+            res30 = i30 * v30
+
+            total1 = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10
+            total2 = res11 + res12 + res13 + res14 + res15 + res16 + res17 + res18 + res19 + res20
+            total3 = res21 + res22 + res23 + res24 + res25 + res26 + res27 + res28 + res29 + res30
+
+
+            if (total1 >= 0 && total2 >= 0 && total3 >= 0) {
+                totalfinal = total1 + total2 + total3
+                div.innerHTML = "Total =" + " " + "R$" + totalfinal + "<br/>" + "Seu pedido foi finalizado" + " " + nome + "!"
+            }
+
+            else {
+                div.innerHTML = "Algo deu errado, verifique os itens selecionados e faça o pedido novamente"
+            }
+
+            
+        }
+
+        const cep = document.querySelector("#cep")
+
+            cep.addEventListener('keypress', () => {
+
+                let ceplength = cep.value.length
+
+                if(ceplength == 5){
+
+                    cep.value += "-"
+                }
+            })
+
+    </script>
+
+</body>
+
+</html>
